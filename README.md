@@ -17,6 +17,6 @@
 А в этой [таблице](https://docs.google.com/spreadsheets/d/1lLu7JaAFoo23XOV87XWc5rpGY2zUfxdeOsy7jaUptiE/edit?usp=sharing) статус разработки модпаков коллекции.
 
 ## Contact me
-Просьба писать на почту monsieurfeb@gmail.com или [Telegram](https://t.me/thirdBTP)
+Просьба писать на почту MonsieurFeb@yandex.ru или [Telegram](https://t.me/thirdBTP/824)
 
 (Или на других платформах, но быть везде - невозможно!)
