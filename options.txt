@@ -138,7 +138,7 @@ key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_create.keyinfo.ponder:key.keyboard.w
 key_key.jei.showUses2:key.mouse.right
-key_key.jei.toggleCheatModeConfigButton:key.mouse.left:CONTROL
+key_key.jei.toggleCheatModeConfigButton:key.mouse.left
 key_key.jei.showUses:key.keyboard.u
 key_key.jei.transferRecipeBookmark:key.mouse.left:SHIFT
 key_key.jei.cheatOneItem:key.mouse.left
