@@ -5,6 +5,8 @@
 
 Посвящена Create и его аддонам, сосредоточена на любителей механики
 
+[Здесь](https://docs.google.com/spreadsheets/d/1tW3GY6hryWNzhJMmaCk2gAa2qZCih_nMVLEAfpWBdOs/edit?usp=sharing) можно ознакомиться со списком модов.
+
 # Installation
 - Установите Minecraft 1.20.1. Выберите одну из папок (пустых) и запомните её.
 - Установите Forge 47.3.12, выбрав ту же папку.
