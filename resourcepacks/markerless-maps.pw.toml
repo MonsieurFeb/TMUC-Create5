@@ -1,0 +1,13 @@
+name = "Markerless maps"
+filename = "Markerless Maps.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eae02f109d2a7bbaa9d47f742199c45adcb97abb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6802660
+project-id = 1310661

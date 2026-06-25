@@ -1,0 +1,13 @@
+name = "More Tiny Gates"
+filename = "moretinygates-1.20-1.0.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b1ffa42a4b8bf5c04679b3429a7b5e2e7c5bba70"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4690847
+project-id = 704864

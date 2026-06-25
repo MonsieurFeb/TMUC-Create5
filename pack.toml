@@ -1,0 +1,13 @@
+name = "TMUC-Create5"
+author = "MonsieurFeb"
+version = "0.2.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "d6bde928ff2b876036650ab8991047b7baffd3c58488a15824233431de175cbd"
+
+[versions]
+forge = "47.3.12"
+minecraft = "1.20.1"

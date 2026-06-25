@@ -1,0 +1,13 @@
+name = "Create Deco Additions "
+filename = "create-deco-additions-1.3.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4c342731e62027d66b5aaa8ed3bc70e074e91f19"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5858625
+project-id = 1130982

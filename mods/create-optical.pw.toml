@@ -1,0 +1,13 @@
+name = "Create Optical"
+filename = "create_optical-0.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c577ed69c17518e759a30700da9bb2f9b7433f67"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6191036
+project-id = 1007714

@@ -1,6 +1,6 @@
 # TMUC-Create5
 
-![tmuccreate5.png](tmuccreate5.png)
+![minecraft_title.png](config/fancymenu/assets/minecraft_title.png)
 
 ### Tech Modpack Ultimate Collection
 
