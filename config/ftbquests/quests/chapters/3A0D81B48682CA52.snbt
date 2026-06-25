@@ -1,0 +1,1888 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3A0D81B48682CA52"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:iron_axe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "3A0D81B48682CA52"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [""]
+			id: "6DBA7410B91F4CBA"
+			rewards: [
+				{
+					id: "64F6072E2B6C8848"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "70C9BEEFE603A2CF"
+					item: "minecraft:fire_charge"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Нарубите дерева"
+			tasks: [{
+				count: 5L
+				id: "55E8C41402DC984C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:oak_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_oak_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:spruce_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_spruce_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:birch_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_birch_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:jungle_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_jungle_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:acacia_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_acacia_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:dark_oak_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_dark_oak_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:mangrove_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_mangrove_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:cherry_log"
+							}
+							{
+								Count: 1b
+								id: "minecraft:stripped_cherry_log"
+							}
+						]
+					}
+				}
+				title: "Бревно"
+				type: "item"
+			}]
+			title: "Рубка древесины"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6DBA7410B91F4CBA"]
+			description: ["Готовка без топлива!"]
+			hide_until_deps_complete: true
+			id: "337028E6B96D71D0"
+			rewards: [
+				{
+					count: 6
+					id: "78C004A250B018CD"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0BCF94A235FE7211"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Создайте костер"
+			tasks: [{
+				id: "128303FDA091E3DD"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			title: "Первобытный огонь"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["337028E6B96D71D0"]
+			description: ["Начало начал"]
+			id: "5A15527032B0FB8D"
+			rewards: [
+				{
+					id: "719566EEA2A7DC1C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "61B66FCF2F6023AF"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "197CDC4A7322B447"
+					item: "minecraft:glow_berries"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Создайте деревянную кирку"
+			tasks: [{
+				id: "45F6D33AC5395541"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Первый инструмент"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A15527032B0FB8D"]
+			id: "68CE10F70EB89FE1"
+			rewards: [{
+				count: 5
+				id: "5EBA7BA7F7E23CB3"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Добудьте 10 булыжника"
+			tasks: [{
+				count: 10L
+				id: "3A1A21B88CE8FB49"
+				item: { Count: 10, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			title: "Добыча камня"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BCE8986024DCE51"]
+			description: [""]
+			hide_dependency_lines: false
+			icon: "minecraft:zombie_head"
+			id: "02CFD8ED0F945379"
+			rewards: [
+				{
+					count: 3
+					id: "7D391C95BECF4AAC"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					id: "2FBE6715FD1F7ADA"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Убейте 5 зомби"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "7C62141BB8DA0AA3"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Люди уже не те,,,"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31840862F9CD9E70"]
+			description: ["В экстренных ситуациях когда поблизости нет костра можете зажечь печь что бы спасти свою жизнь"]
+			hide_dependency_lines: false
+			id: "2BCE8986024DCE51"
+			rewards: [{
+				id: "7909B1CFF23D2AE6"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			subtitle: "Создайте печку"
+			tasks: [{
+				id: "51C530EBD0B33519"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Тепло на грани"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["225FFED5A12F5492"]
+			description: [""]
+			hide_until_deps_complete: true
+			id: "2757FED952EF99E8"
+			rewards: [
+				{
+					count: 4
+					id: "6C1F5D10CF5CB87A"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7FC1E519C8FA811C"
+					item: "minecraft:cooked_salmon"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "создайте удочку"
+			tasks: [{
+				id: "240C80D61DF81388"
+				item: {
+					Count: 1
+					id: "minecraft:fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Рыболов"
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["31840862F9CD9E70"]
+			hide_dependency_lines: false
+			id: "0EF2BDFC4DCEFE8F"
+			rewards: [
+				{
+					id: "583E2521B97B7428"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "741D849622AB9456"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "656418DE36D0F5D8"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "12C8681B5ECE0FA2"
+					item: "minecraft:bone"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Добудьте железо"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "61F5CFFFBBA78A98"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			title: "Шахтер"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["19592307EBDF5C33"]
+			hide_until_deps_complete: true
+			id: "1B5C8A104C18C933"
+			rewards: [{
+				id: "43311C0842E516EC"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "rsquare"
+			size: 0.7d
+			subtitle: "Создайте 3 железных инструмента"
+			tasks: [
+				{
+					id: "361C2BC4BEB4A8EB"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57F87DBA6FE3C23B"
+					item: {
+						Count: 1
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EE7E3B47774F3A1"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Железные инструменты"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A15527032B0FB8D"]
+			hide_until_deps_complete: true
+			id: "6DCD38C6F634F176"
+			rewards: [{
+				count: 3
+				id: "60AA55C77BB33451"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.7d
+			subtitle: "Добудьте пшеницу и семена подземных корней"
+			tasks: [{
+				count: 25L
+				id: "037D521B5004C4DB"
+				item: { Count: 25, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			title: "Агроном"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7FFC265BB6C5AF6E"]
+			hide_dependency_lines: false
+			id: "47224F55A46086F7"
+			rewards: [
+				{
+					count: 3
+					id: "0224061A2125AAD1"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "6751192C8606F380"
+					item: "minecraft:egg"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Добудьте 40 дерева"
+			tasks: [{
+				count: 40L
+				id: "652A63A1EEEA94B9"
+				item: { Count: 20, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			title: "Лесоруб"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FFC265BB6C5AF6E"]
+			hide_until_deps_complete: true
+			id: "25624328D46F23FB"
+			rewards: [{
+				count: 3
+				id: "538D2E3C7DD5E925"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 0.7d
+			subtitle: "Добудьте золото"
+			tasks: [{
+				count: 5L
+				id: "27D3A7FA30901E07"
+				item: { Count: 5, id: "minecraft:raw_gold" }
+				type: "item"
+			}]
+			title: "Золоторукий"
+			x: 2.1d
+			y: 1.75d
+		}
+		{
+			dependencies: ["73AA1A09BD2C3896"]
+			id: "6821D431653ADCE7"
+			rewards: [{
+				id: "020FC42D3825783F"
+				item: "minecraft:lantern"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Создайте плавильную печь"
+			tasks: [{
+				id: "677479EACA16D1D9"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "Железа мне!БЫСТРО!"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["225FFED5A12F5492"]
+			description: [""]
+			icon: "minecraft:skeleton_skull"
+			id: "1E0E2DE35D1DF8D8"
+			rewards: [{
+				id: "34A9C4957C96F35F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "Убейте 110 зомби"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "741C45AB37291909"
+				type: "kill"
+				value: 110L
+			}]
+			title: "Скелеты"
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["02CFD8ED0F945379"]
+			description: [""]
+			hide_until_deps_complete: true
+			icon: "minecraft:cobweb"
+			icon_scale: 1.4d
+			id: "225FFED5A12F5492"
+			rewards: [{
+				count: 3
+				id: "61AD8B5894317126"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.7d
+			subtitle: "Убейте 5 пауков"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "0F70385468CAD3E5"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Арахнофобия"
+			x: 7.35d
+			y: -2.1d
+		}
+		{
+			dependencies: ["6DCD38C6F634F176"]
+			description: [""]
+			icon: "minecraft:baked_potato"
+			id: "66CEA84E40C6998D"
+			rewards: [
+				{
+					count: 10
+					id: "2C1E46EDD51B8AE4"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51135BEB72B62406"
+					item: "minecraft:fire_charge"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "05BA275AB8B61F9D"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 0.79d
+			subtitle: "Добудьте много картофеля"
+			tasks: [
+				{
+					count: 64L
+					id: "4285EC02436644B2"
+					item: { Count: 64, id: "minecraft:baked_potato" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "77244658A179865E"
+					item: { Count: 64, id: "minecraft:potato" }
+					type: "item"
+				}
+			]
+			title: "Запасы на зиму!"
+			x: -1.185d
+			y: -0.79d
+		}
+		{
+			dependencies: ["2757FED952EF99E8"]
+			description: [""]
+			id: "78EFE40A1E2946ED"
+			rewards: [
+				{
+					count: 5
+					id: "72F24DA273708842"
+					item: "farmersdelight:tomato_crate"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7BEA34653828B1F9"
+					item: "farmersdelight:onion_crate"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "0570FD5E32E74288"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4BD3929F9242D285"
+					item: "farmersrespite:coffee_beans"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "47624345F4D7BA77"
+					item: "farmersrespite:tea_seeds"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "5598C2364367FF5D"
+					item: "farmersdelight:fried_egg"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Приготовить 6 продвинутых блюд"
+			tasks: [
+				{
+					id: "0CBB819772059851"
+					item: "farmersdelight:steak_and_potatoes"
+					type: "item"
+				}
+				{
+					id: "1A4D7C3271F3D713"
+					item: "farmersdelight:bacon_and_eggs"
+					type: "item"
+				}
+				{
+					id: "72E6B4B6C377C7C1"
+					item: "farmersdelight:sweet_berry_cheesecake"
+					type: "item"
+				}
+				{
+					id: "22953D1EA6371EF8"
+					item: "farmersdelight:egg_sandwich"
+					type: "item"
+				}
+				{
+					id: "0E745972775E6B1B"
+					item: "farmersdelight:chicken_soup"
+					type: "item"
+				}
+				{
+					id: "652B87FEB0D70BD8"
+					item: "farmersdelight:ratatouille"
+					type: "item"
+				}
+			]
+			title: "Делишес"
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AA1A09BD2C3896"]
+			id: "7280753D94C24E7A"
+			rewards: [{
+				id: "48F943826DD9A073"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "rsquare"
+			subtitle: "Создайте Взрывчатку"
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "4EC37464AFBD5109"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 150L
+					id: "6349CBCA96A9E0B0"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+			]
+			title: "Мастер Пиротехник"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B5C8A104C18C933"]
+			icon: {
+				Count: 1
+				id: "minecraft:leather_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "539EE2C3092BCA3D"
+			rewards: [
+				{
+					id: "5DE47A9CAEADFAFA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 12
+					id: "44AC2B3BC082C90E"
+					item: "minecraft:cooked_porkchop"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.78d
+			subtitle: "На первое время сойдет"
+			tasks: [
+				{
+					id: "06DD676DAA753575"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "619A1254C080C791"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2528A90D2C7B1343"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "по одежке не судят"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0EF2BDFC4DCEFE8F"]
+			hide_until_deps_complete: true
+			id: "729AF022BCAB829E"
+			rewards: [{
+				id: "0B3158DFB949532A"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 5L
+				id: "387983805DD109C9"
+				item: { Count: 5, id: "minecraft:lava_bucket" }
+				type: "item"
+			}]
+			title: "Очаг и свеча"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2757FED952EF99E8"]
+			id: "30EF7D6BA87BE479"
+			rewards: [
+				{
+					count: 15
+					id: "74E9D5F442DBC6B2"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "6D3D5EF9CF655976"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 40L
+					id: "581BC15A4FFC5224"
+					item: { Count: 40, id: "farmersdelight:tomato" }
+					type: "item"
+				}
+				{
+					count: 250L
+					id: "107FA9FF5F1CE85A"
+					item: { Count: 250, id: "minecraft:potato" }
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "5E006FD85CEAAF3C"
+					item: { Count: 15, id: "minecraft:beetroot_soup" }
+					type: "item"
+				}
+			]
+			title: "Продовольственный запас"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0EF2BDFC4DCEFE8F"]
+			id: "19592307EBDF5C33"
+			rewards: [
+				{
+					count: 15
+					id: "741640C741C76751"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "0A0F0B188CC8E3FD"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Отправляйтесь в шахту для добычи ресурсов"
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "1F932A205F4CF1E1"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "3B224BADA0CC58BF"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+			]
+			title: "Неизведанное"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47224F55A46086F7"]
+			hide_until_deps_complete: true
+			icon_scale: 1.3d
+			id: "070C1573A13CF0FF"
+			rewards: [
+				{
+					id: "3B46B2B0C5AD0E12"
+					item: "minecraft:parrot_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "5ACDB1142CA52FA6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "59DF65C93BEFDC7C"
+					item: "minecraft:music_disc_cat"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.8d
+			subtitle: "Поспи и возрадуйся"
+			tasks: [{
+				advancement: "minecraft:adventure/sleep_in_bed"
+				criterion: ""
+				icon: "minecraft:red_bed"
+				id: "1FA4D3DF372FFA9C"
+				type: "advancement"
+			}]
+			title: "Пора спать"
+			x: -1.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47224F55A46086F7"]
+			hide_dependency_lines: false
+			id: "73AA1A09BD2C3896"
+			rewards: [
+				{
+					id: "1C8433C4C508643D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 5
+					id: "272D96A49023EE07"
+					item: "minecraft:cooked_porkchop"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Хорошая печка для хорошей еды"
+			tasks: [{
+				id: "7DAF94F86FA4917E"
+				item: "minecraft:smoker"
+				type: "item"
+			}]
+			title: "Покоптим?"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73AA1A09BD2C3896"]
+			icon_scale: 1.3d
+			id: "38A468AE9BEE55B1"
+			rewards: [
+				{
+					count: 16
+					id: "1B2FE1B63ED2D6CD"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "10704211BDAEE034"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 0.76d
+			subtitle: "Пора бы зачарится"
+			tasks: [{
+				id: "551AEA116A2058D9"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Иной уровень"
+			x: -2.28d
+			y: 2.6599999999999997d
+		}
+		{
+			dependencies: ["729AF022BCAB829E"]
+			id: "4034A78E7BC95381"
+			rewards: [
+				{
+					id: "0B1B5F54B8BC492C"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 25
+					id: "00A4851611A0B6EE"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 26
+					id: "79FC526A8DFE3C18"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Создайте алмазный нагрудник и поножи"
+			tasks: [
+				{
+					id: "1675F1B61CB9129E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "794B51E7473EDF46"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:diamond_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Бронированый"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["225FFED5A12F5492"]
+			id: "010A7C46DE0DBE5B"
+			rewards: [
+				{
+					id: "6F7718A129D5EE5E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 25
+					id: "0C322860639BD6D1"
+					item: "farmersdelight:bacon_and_eggs"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.4d
+			subtitle: "Посетите джунгли в ядерную зиму"
+			tasks: [{
+				biome: "minecraft:jungle"
+				id: "045BFA137F72CD8F"
+				title: "Какие то странные тропики"
+				type: "biome"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			description: ["Не знаю что, но похоже у Вас что-то случилось"]
+			icon: "minecraft:player_head"
+			id: "7C7DF0209F707D9F"
+			invisible: true
+			shape: "heart"
+			subtitle: "Секретный квест"
+			tasks: [{
+				entity: "minecraft:player"
+				id: "2F19FDAF6AA7DAB9"
+				type: "kill"
+				value: 10L
+			}]
+			title: "Что с тобой не так?"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			description: ["Ммм бульбачка, як я кахаю яе, зара як пажару і буду есці. Стоп на каком языке я только что говорил?"]
+			id: "06036DDE3B8BF4AE"
+			invisible: true
+			rewards: [
+				{
+					id: "283760E02F0F6951"
+					item: {
+						Count: 1
+						id: "create:potato_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "115583D41341EA70"
+					team_reward: false
+					type: "xp_levels"
+					xp_levels: 77
+				}
+				{
+					count: 3
+					id: "27B83EE120A52141"
+					item: "minecraft:diamond_block"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 100
+					id: "1E83C12E4D373927"
+					item: "minecraft:poisonous_potato"
+					type: "item"
+				}
+			]
+			shape: "heart"
+			subtitle: "Секретный квест"
+			tasks: [{
+				count: 4000L
+				id: "61F963DEC8B8D316"
+				item: "minecraft:potato"
+				type: "item"
+			}]
+			title: "Беларус"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: ["Реально стальные что ли?!"]
+			id: "76910C089A7C9CB3"
+			invisible: true
+			rewards: [
+				{
+					count: 340
+					id: "37782D7445F039CB"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "067549928F552740"
+					type: "xp_levels"
+					xp_levels: 60
+				}
+			]
+			shape: "heart"
+			subtitle: "Секретный квест"
+			tasks: [{
+				count: 500L
+				id: "4B2F42AAC47AD532"
+				item: { Count: 500, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			title: "Стальные яйца"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			description: ["Сколько можно умирать? "]
+			id: "11EEBBAB926CB271"
+			invisible: true
+			rewards: [{
+				id: "2E74785642944740"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "heart"
+			subtitle: "Секретный квест"
+			tasks: [{
+				id: "2027859229555BAF"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 120
+			}]
+			title: "Skill issue"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["225FFED5A12F5492"]
+			description: ["Декор"]
+			icon: "minecraft:grass_block"
+			id: "205A29C8D6C89DF6"
+			rewards: [
+				{
+					count: 5
+					id: "773B5B52CD3CFAF0"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									2080793942
+									-524468218
+									-1541115779
+									1949756395
+								]
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2IxNDIxNzgyMzUyYjkzNjg1YjU5ZjE0ZTUwNjk0OWJmN2EzM2VmZGQ4MWRkNjVlZDE3ZWE2ZGI0MjJmNTNmIn19fQ=="
+									}]
+								}
+							}
+							display: {
+								Lore: [
+									"{\"text\":\"ID головы: 1214\",\"color\":\"gray\",\"italic\":false}"
+									"{\"text\":\"mcheads.ru\",\"color\":\"blue\",\"italic\":false}"
+								]
+								Name: "{\"text\":\"Кекс\",\"color\":\"gold\",\"underlined\":true,\"bold\":true,\"italic\":false}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6CABFB0CF8EE09AD"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									2080793942
+									-524468218
+									-1541115779
+									1949756395
+								]
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRjYzg3YWZkMWMyZGEyNTNjM2RlMGJmZmEyNjNkNGRlNmYyZDI2NjI1NTQ1ZDI1ZjQ2Y2UyYzY0ZDRiNSJ9fX0="
+									}]
+								}
+							}
+							display: {
+								Lore: [
+									"{\"text\":\"ID головы: 1907\",\"color\":\"gray\",\"italic\":false}"
+									"{\"text\":\"mcheads.ru\",\"color\":\"blue\",\"italic\":false}"
+								]
+								Name: "{\"text\":\"Ржаной хлеб\",\"color\":\"gold\",\"underlined\":true,\"bold\":true,\"italic\":false}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "0F3538ED943C0548"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									2080793942
+									-524468218
+									-1541115779
+									1949756395
+								]
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiY2QxODBiMWM4ZmM0Y2EzOWNmNDY3YzM0NWFlODNjYzE2YjYzY2IyNTU3MDM0NjAxMDNhM2VlYmE0NTcifX19"
+									}]
+								}
+							}
+							display: {
+								Lore: [
+									"{\"text\":\"ID головы: 1189\",\"color\":\"gray\",\"italic\":false}"
+									"{\"text\":\"mcheads.ru\",\"color\":\"blue\",\"italic\":false}"
+								]
+								Name: "{\"text\":\"Банка (синяя)\",\"color\":\"gold\",\"underlined\":true,\"bold\":true,\"italic\":false}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7A8D0BE736DDB4DF"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									2080793942
+									-524468218
+									-1541115779
+									1949756395
+								]
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzBiOGI1ODg5ZWUxYzYzODhkYzZjMmM1ZGJkNzBiNjk4NGFlZmU1NDMxOWEwOTVlNjRkYjc2MzgwOTdiODIxIn19fQ=="
+									}]
+								}
+							}
+							display: {
+								Lore: [
+									"{\"text\":\"ID головы: 1202\",\"color\":\"gray\",\"italic\":false}"
+									"{\"text\":\"mcheads.ru\",\"color\":\"blue\",\"italic\":false}"
+								]
+								Name: "{\"text\":\"Банка с вареньем (красная)\",\"color\":\"gold\",\"underlined\":true,\"bold\":true,\"italic\":false}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "28F0247C9349C1AF"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									2080793942
+									-524468218
+									-1541115779
+									1949756395
+								]
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZlZjFjMjVmNTE2ZjJlN2Q2Zjc2Njc0MjBlMzNhZGNmM2NkZjkzOGNiMzdmOWE0MWE4YjM1ODY5ZjU2OWIifX19"
+									}]
+								}
+							}
+							display: {
+								Lore: [
+									"{\"text\":\"ID головы: 1198\",\"color\":\"gray\",\"italic\":false}"
+									"{\"text\":\"mcheads.ru\",\"color\":\"blue\",\"italic\":false}"
+								]
+								Name: "{\"text\":\"Бутерброд\",\"color\":\"gold\",\"underlined\":true,\"bold\":true,\"italic\":false}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6CB43D9893B3BDA8"
+					item: {
+						Count: 1
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									2080793942
+									-524468218
+									-1541115779
+									1949756395
+								]
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBlYWNhYzQxYTllYWYwNTEzNzZlZjJmOTU5NzAxZTFiYmUxYmY0YWE2NzE1YWRjMzRiNmRjMjlhMTNlYTkifX19"
+									}]
+								}
+							}
+							display: {
+								Lore: [
+									"{\"text\":\"ID головы: 1199\",\"color\":\"gray\",\"italic\":false}"
+									"{\"text\":\"mcheads.ru\",\"color\":\"blue\",\"italic\":false}"
+								]
+								Name: "{\"text\":\"Картошка фри\",\"color\":\"gold\",\"underlined\":true,\"bold\":true,\"italic\":false}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.4d
+			subtitle: "Прокатитесь на вагонетке"
+			tasks: [
+				{
+					icon: "minecraft:stripped_acacia_wood"
+					id: "17E34431F50F39C8"
+					structure: "minecraft:village_savanna"
+					type: "structure"
+				}
+				{
+					biome: "minecraft:savanna"
+					icon: "minecraft:acacia_wood"
+					id: "56886212E7C7B7AE"
+					title: "Cаванна"
+					type: "biome"
+				}
+				{
+					icon: "minecraft:minecart"
+					id: "6982EBEC89879963"
+					stat: "minecraft:minecart_one_cm"
+					type: "stat"
+					value: 2000
+				}
+			]
+			title: "Прогулочка"
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			id: "3C845E9040ECAB75"
+			invisible: true
+			rewards: [{
+				id: "62A85FD7CE6BB90C"
+				item: "minecraft:candle"
+				type: "item"
+			}]
+			shape: "heart"
+			subtitle: "Секретный Квест"
+			tasks: [{
+				id: "30691E5AB2E0EB09"
+				item: "minecraft:jungle_trapdoor"
+				type: "item"
+			}]
+			title: "А зачем?"
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			id: "7108B692FD24B750"
+			invisible: true
+			rewards: [
+				{
+					count: 5
+					id: "3B7D5CEA3737CF1D"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0F4FFB733104820F"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+							Purity: -1
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 0.7d
+			subtitle: "Проживите свой первый день "
+			tasks: [{
+				id: "209EAEB0902837D5"
+				title: "Первый день"
+				type: "custom"
+			}]
+			x: 0.35d
+			y: 1.4d
+		}
+		{
+			id: "5A5FCAC5B400E2E3"
+			invisible: true
+			rewards: [{
+				count: 3
+				id: "7AE11128CD91D9A6"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			size: 0.8d
+			subtitle: "Проживите неделю"
+			tasks: [{
+				id: "6EE1AFF2A9ED0208"
+				title: "Неделя"
+				type: "custom"
+			}]
+			x: -0.4d
+			y: 2.0d
+		}
+		{
+			id: "7188E21143BFC2B3"
+			invisible: true
+			rewards: [{
+				id: "72CC1CCB383CF285"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			size: 0.8d
+			subtitle: "Проживите месяц"
+			tasks: [{
+				id: "1B9A84CA0546AD81"
+				type: "custom"
+			}]
+			title: "Месяц"
+			x: -0.8d
+			y: 2.8d
+		}
+		{
+			id: "54422335166A606B"
+			invisible: true
+			rewards: [
+				{
+					id: "23D837F4CB37C623"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
+				{
+					id: "58FB8F0A96117E00"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+			]
+			size: 0.9d
+			subtitle: "Проживите 1 год"
+			tasks: [{
+				id: "7C9482BA2250A5E2"
+				type: "custom"
+			}]
+			title: "Новый год, новые страдания"
+			x: 0.44999999999999996d
+			y: 4.05d
+		}
+		{
+			id: "396DB367CA8E441E"
+			invisible: true
+			rewards: [{
+				id: "5F6A73AB08434E09"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			size: 0.8d
+			subtitle: "Проживите пол года"
+			tasks: [{
+				id: "3347AEE75EA1C998"
+				type: "custom"
+			}]
+			title: "Пол года"
+			x: -0.4d
+			y: 3.6d
+		}
+		{
+			dependencies: ["68CE10F70EB89FE1"]
+			id: "31840862F9CD9E70"
+			rewards: [{
+				count: 5
+				id: "1BA997A6E13F983A"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Создайте каменную кирку"
+			tasks: [{
+				id: "53FB5AA1A8CBF9C0"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["02CFD8ED0F945379"]
+			id: "600D9B654954C6C1"
+			rewards: [
+				{
+					count: 3
+					id: "21724F2EAAEA2BCB"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					id: "41CFA21328763968"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			subtitle: "Добудьте 14 гнилой плоти"
+			tasks: [{
+				count: 14L
+				id: "0501AE708E0F365D"
+				item: "minecraft:rotten_flesh"
+				type: "item"
+			}]
+			title: "это точно сьедобно?"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["19592307EBDF5C33"]
+			id: "7FFC265BB6C5AF6E"
+			rewards: [
+				{
+					count: 24
+					id: "31A5B0B7AB2720EE"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "1AC40439C8D43178"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Добудьте 35 медной руды"
+			tasks: [{
+				consume_items: true
+				count: 35L
+				id: "04129CF1BE88676D"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			title: "Медь"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			description: ["Ах... Штаны всевластия! Их истиную силу можно узнать если только надеть. надев их вы станете богом, просто доверьтесь моим словам."]
+			id: "3417C7DCC7076C24"
+			invisible: true
+			rewards: [{
+				count: 10
+				id: "671025907E6AB777"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			shape: "heart"
+			subtitle: "Секретный квест"
+			tasks: [{
+				count: 1000L
+				id: "7D04341E5BB6782D"
+				item: { Count: 1000, id: "minecraft:raw_copper" }
+				type: "item"
+			}]
+			title: "Медный бычок"
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68CE10F70EB89FE1"]
+			hide_until_deps_complete: true
+			icon: "minecraft:stone"
+			icon_scale: 1.3d
+			id: "08D861D46E14D402"
+			rewards: [
+				{
+					id: "2A2B2258576F0BD2"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:mending"
+									lvl: 1s
+								}
+								{
+									id: "minecraft:efficiency"
+									lvl: 5s
+								}
+							]
+							RepairCost: 7
+							display: {
+								Name: "{\"text\":\"Кирка быстрой руки\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "03B27BA1725E2F31"
+					item: "farmersdelight:smoked_ham"
+					type: "item"
+				}
+				{
+					id: "68224105CB2C7C56"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			subtitle: "Добудьте руду каждого вида"
+			tasks: [
+				{
+					consume_items: true
+					count: 20L
+					id: "1AAB6F31AA79B798"
+					item: { Count: 20, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "769071F23E9EAD31"
+					item: { Count: 16, id: "minecraft:raw_iron" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "30814976AF4F322D"
+					item: { Count: 10, id: "minecraft:raw_gold" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "0039749466B46E92"
+					item: { Count: 64, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "2C48962765C189C7"
+					item: { Count: 64, id: "minecraft:lapis_lazuli" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "23538BCD27DB537D"
+					item: { Count: 5, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "6011CAA063F91CCE"
+					item: { Count: 2, id: "minecraft:netherite_scrap" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "495376D4D8A5FD55"
+					item: { Count: 6, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 14L
+					id: "7B4B90C7CD628052"
+					item: { Count: 14, id: "minecraft:amethyst_shard" }
+					type: "item"
+				}
+			]
+			title: "Геодезист"
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			icon: "minecraft:leather_horse_armor"
+			id: "2259C037C44E0B74"
+			invisible: true
+			rewards: [{
+				id: "2115086897887E2B"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			size: 1.0d
+			subtitle: "Убейте 150 зомби и 10 скелетов"
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "3046E86A15614106"
+					type: "kill"
+					value: 150L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "399FD13F42B362FB"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Скаут"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			id: "5394F82B248F0C33"
+			invisible: true
+			rewards: [{
+				id: "7E5FD82F9EEB0A3F"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "heart"
+			subtitle: "Умрите впервые"
+			tasks: [{
+				id: "186A3098032161FE"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 1
+			}]
+			title: "Реинкарнация "
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			description: ["Бесконечность не предел"]
+			id: "712377BC710A1A40"
+			invisible: true
+			rewards: [{
+				id: "31D456DB0D386D24"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "heart"
+			subtitle: "Секретный квест"
+			tasks: [{
+				id: "0C7C5BDB6282C585"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 1000
+			}]
+			title: "ZEROs337"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Добрый день!"
+				"Сейчас перед вами первая версия квестов, за основу были взяты и адаптированы квесты Cold hell 0.6.4 от Nowhere, за что ему большое спасибо!"
+				"В дальнейшем они будут переработаны конкретно под эту сборку (буду рад помощи, можете связаться с MonsieurFeb для этого)"
+				"Приятной игры!"
+			]
+			id: "086BD8270EB468C1"
+			rewards: [
+				{
+					id: "61B1D05A0A6DF4F0"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "1ED15E7B668C31F2"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "05564ED688CF3767"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AAC7CA8CAB5E4B1"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4858EDD89E4B5449"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2D263E3BF820255B"
+					item: "minecraft:fire_charge"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "18DD3EB8DBA84BEF"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Введение в сборку"
+			tasks: [{
+				id: "5819D9B2F3C4FAB7"
+				title: "Это мстория о вашей смерти..."
+				type: "checkmark"
+			}]
+			title: "Добро пожаловать"
+			x: -4.5d
+			y: -2.0d
+		}
+	]
+	subtitle: ["Тестовая версия квестов"]
+	title: "&bВведение"
+}
