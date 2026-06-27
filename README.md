@@ -8,12 +8,15 @@
 
 Посвящена Create и его аддонам, сосредоточена на любителей механики
 
-[Здесь](https://docs.google.com/spreadsheets/d/1tW3GY6hryWNzhJMmaCk2gAa2qZCih_nMVLEAfpWBdOs/edit?usp=sharing) можно ознакомиться со списком модов.
+[Здесь](https://docs.google.com/spreadsheets/d/1DEZpgkjTG3N-iYwwbzolBgChz2KRi6p6LJ1TJDj8qiE/edit?usp=sharing) можно ознакомиться со списком модов.
+
+Здесь я пробовал [Packwiz](https://github.com/packwiz/packwiz).
+По итогу его разработка отложена, а со сборками можно ознакомиться [здесь](https://disk.yandex.ru/d/4m91EODo0R6pVg) и [здесь](https://drive.google.com/drive/folders/1APmp1m47YHzwrFNG7wEs7I6Ferofd_n3?usp=sharing)
 
 # Installation
 - Установите Minecraft 1.20.1. Выберите одну из папок (пустых) и запомните её.
 - Установите Forge 47.3.12, выбрав ту же папку.
-- Переместите файлы из архива в папку игры
+- Переместите файлы из архива в папку игры.
 - Готово. Используемые мной настройки игры и модов также включены.
 
 ## Other Modpacks
