@@ -11,7 +11,7 @@
 [Здесь](https://docs.google.com/spreadsheets/d/1DEZpgkjTG3N-iYwwbzolBgChz2KRi6p6LJ1TJDj8qiE/edit?usp=sharing) можно ознакомиться со списком модов.
 
 Здесь я пробовал [Packwiz](https://github.com/packwiz/packwiz).
-По итогу его разработка отложена, а со сборками можно ознакомиться [здесь](https://disk.yandex.ru/d/4m91EODo0R6pVg) и [здесь](https://drive.google.com/drive/folders/1APmp1m47YHzwrFNG7wEs7I6Ferofd_n3?usp=sharing)
+По итогу его разработка отложена, а со сборками можно ознакомиться [здесь](https://disk.yandex.ru/d/RlygETbr9U7wbA) и [здесь](https://drive.google.com/drive/folders/1APmp1m47YHzwrFNG7wEs7I6Ferofd_n3?usp=sharing)
 
 # Installation
 - Установите Minecraft 1.20.1. Выберите одну из папок (пустых) и запомните её.
